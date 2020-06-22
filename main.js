@@ -43,14 +43,14 @@ let answer = (str) => {
     if (num < max) {
       setTimeout(() => {
         que.textContent = "問題" + (num + 1) + " " + name[num];
-        musi.src = "img./musi" + num + ".png";
+        musi.src = "img/musi" + num + ".png";
       }, 500);
     } else {
       que.textContent = "問題の解答終了!";
       clearInterval(time);
       if (sco == max) {
         que.textContent = "全問正解おめでとう！";
-        musi.src = "img./clear.png";
+        musi.src = "img/clear.png";
       }
     }
   }
